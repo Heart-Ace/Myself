@@ -383,55 +383,55 @@ else
             await $.wait(1200);
             console.log(`开始执行幸运转盘任务时间:${times}`)
             await zhuanpan();
-            if (step == 1 && (Time.getHours() >= 22 && Time.getHours() <= 23) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 10))
+            if (step == 1 && (Time.getHours() >= 22 && Time.getHours() <= 23) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
                 await $.wait(1200);
                 console.log(`开始执行步数兑换任务时间:${times}`)
                 await member();
             }
-            if (cupid == 1 && (Time.getHours() >= 18 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 10))
+            if (cupid == 1 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
                 await $.wait(1000);
                 console.log(`开始执行10点喝水任务任务时间:${times}`)
                 await drink();
             }
-            if (cupid == 2 && (Time.getHours() >= 18 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 10))
+            if (cupid == 2 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
                 await $.wait(1000);
                 console.log(`开始执行11点喝水任务任务时间:${times}`)
                 await drink();
             }
-            if (cupid == 3 && (Time.getHours() >= 18 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 10))
+            if (cupid == 3 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
                 await $.wait(1000);
                 console.log(`开始执行12点喝水任务任务时间:${times}`)
                 await drink();
             }
-            if (cupid == 4 && (Time.getHours() >= 18 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 10))
+            if (cupid == 4 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
                 await $.wait(1000);
                 console.log(`开始执行13点喝水任务任务时间:${times}`)
                 await drink();
             }
-            if (cupid == 5 && (Time.getHours() >= 18 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 10))
+            if (cupid == 5 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
                 await $.wait(1000);
                 console.log(`开始执行14点喝水任务任务时间:${times}`)
                 await drink();
             }
-            if (cupid == 6 && (Time.getHours() >= 18 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 10))
+            if (cupid == 6 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
                 await $.wait(1000);
                 console.log(`开始执行15点喝水任务任务时间:${times}`)
                 await drink();
             }
-            if (cupid == 7 && (Time.getHours() >= 18 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 10))
+            if (cupid == 7 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
                 await $.wait(1000);
                 console.log(`开始执行16点喝水任务任务时间:${times}`)
                 await drink();
             }
-            if (cupid == 8 && (Time.getHours() >= 18 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 10))
+            if (cupid == 8 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
                 await $.wait(1000);
                 console.log(`开始执行17点喝水任务任务时间:${times}`)
