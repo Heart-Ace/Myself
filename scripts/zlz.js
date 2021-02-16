@@ -315,7 +315,7 @@ else
     }
     if ("CUPID")
     {
-        cupid = $.getval("CUPID") || '0';
+        cupid = $.getval("CUPID") || '1';
     }
     // boxjs中设置多账号数
     let zouluCount = ($.getval('zouluCount') || '1') - 0;
