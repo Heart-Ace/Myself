@@ -383,56 +383,67 @@ else
             await $.wait(1200);
             console.log(`开始执行幸运转盘任务时间:${times}`)
             await zhuanpan();
-            if (step == 1 && (Time.getHours() >= 22 && Time.getHours() <= 23) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
+            //if (step == 1 && (Time.getHours() >= 22 && Time.getHours() <= 23) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
+            if (Time.getHours() == 22 && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
+                step = 1;
                 await $.wait(1200);
                 console.log(`开始执行步数兑换任务时间:${times}`)
                 await member();
             }
-            if (cupid == 1 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
+            if (Time.getHours() == 10 && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
+                cupid = 1; 
                 await $.wait(1000);
                 console.log(`开始执行10点喝水任务任务时间:${times}`)
                 await drink();
             }
-            if (cupid == 2 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
+            if (Time.getHours() == 11 && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
+                cupid = 2; 
                 await $.wait(1000);
                 console.log(`开始执行11点喝水任务任务时间:${times}`)
                 await drink();
             }
-            if (cupid == 3 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
+            if (Time.getHours() == 12 && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
+                cupid = 3; 
                 await $.wait(1000);
                 console.log(`开始执行12点喝水任务任务时间:${times}`)
                 await drink();
             }
-            if (cupid == 4 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
+            if (Time.getHours() == 13 && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
+                cupid = 4; 
                 await $.wait(1000);
                 console.log(`开始执行13点喝水任务任务时间:${times}`)
                 await drink();
             }
-            if (cupid == 5 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
+            if (Time.getHours() == 14 && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
+                cupid = 5; 
                 await $.wait(1000);
                 console.log(`开始执行14点喝水任务任务时间:${times}`)
                 await drink();
             }
-            if (cupid == 6 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
+            if (Time.getHours() == 15 && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
+                cupid = 6; 
                 await $.wait(1000);
                 console.log(`开始执行15点喝水任务任务时间:${times}`)
                 await drink();
             }
-            if (cupid == 7 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
+            if (Time.getHours() == 16 && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
+                cupid = 7; 
                 await $.wait(1000);
                 console.log(`开始执行16点喝水任务任务时间:${times}`)
                 await drink();
             }
-            if (cupid == 8 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
+            //if (cupid == 8 && (Time.getHours() >= 10 && Time.getHours() <= 20) && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
+            if (Time.getHours() == 17 && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
+                cupid = 8; 
                 await $.wait(1000);
                 console.log(`开始执行17点喝水任务任务时间:${times}`)
                 await drink();
@@ -451,7 +462,7 @@ else
             await jinbi();
             await Msg();
         }
-        console.log(`\n************ 执行第${h+2}轮  ************\n`);
+        console.log(`\n************ 第${h+1}轮执行结束  ************\n`);
         await $.wait(600000);
         }
     }
