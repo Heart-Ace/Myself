@@ -387,6 +387,7 @@ else
             if (Time.getHours() == 22 && (Time.getMinutes() >= 0 && Time.getMinutes() <= 20))
             {
                 step = 1;
+                nique = 22668;
                 await $.wait(1200);
                 console.log(`开始执行步数兑换任务时间:${times}`)
                 await member();
