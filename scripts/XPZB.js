@@ -124,7 +124,7 @@ if ($.isNode()) {
     // 没有设置 XP_CASH 则默认为 0 不提现
     CASH = process.env.XP_CASH || 1;
     // 没有设置 XP_live 则默认0
-    LIVE = process.env.XP_live || 1;
+    LIVE = process.env.XP_live || 2;
     // 没有设置 XP_phone 则默认为 0 
     phone = process.env.XP_phone || 0;
     // 没有设置 XP_sms 则默认0  不获取TOKEN
@@ -348,12 +348,12 @@ async function all() {
             }
         }
 
-        if (nowTimes.getHours() <= 22 && (LIVE != 2 && $.splimit.data.isUperLimit == false || LIVE == 888)) {
+        if (nowTimes.getHours() <= 18 && (LIVE != 2 && $.splimit.data.isUperLimit == false || LIVE == 888)) {
 
             await playo(); //播放o       
             await videoo(); //视频o
 
-            if (LIVES != 2  && nowTimes.getHours() >= 15 && nowTimes.getHours() <= 21) {
+            if (LIVES != 2  && nowTimes.getHours() >= 10 && nowTimes.getHours() <= 17) {
                 await $.wait(30000)
                 tt = CS * 30 - 29
                 console.log(`📍本次视频运行需要${tt}秒` + '\n')
