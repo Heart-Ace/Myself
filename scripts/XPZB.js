@@ -360,9 +360,9 @@ async function all() {
                 await play(); //播放       
                 await video(); //视频
                 await $.wait(tt * 1000)
-                if (!newcashcs.amount) {
+             /*   if (!newcashcs.amount) {
                     await newvideo(); //新人福利
-                }
+                } */
                 if ($.video.data && $.video.data.goldCoinNumber != 0 && videoPublishId6) {
                     await goldvideo(); //金蛋视频
                 }
