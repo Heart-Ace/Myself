@@ -348,7 +348,7 @@ async function all() {
             }
         }
 
-        if (nowTimes.getHours() <= 18 && (LIVE != 2 && $.splimit.data.isUperLimit == false || LIVE == 888)) {
+        if (nowTimes.getHours() <= 22 && (LIVE != 2 && $.splimit.data.isUperLimit == false || LIVE == 888)) {
 
             await playo(); //播放o       
             await videoo(); //视频o
