@@ -211,7 +211,7 @@ if (!hotsoonsignheaderArr[0]) {
       if (h%4 == 0) await treasure_task()
       await control()
       for (let j = 0; j < 3; j++) {
-      await tasklist()
+      //await tasklist()
       await spam()
       //await skill()
       await watch_video()
