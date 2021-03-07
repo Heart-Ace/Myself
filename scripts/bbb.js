@@ -78,7 +78,7 @@ if(CookieVal)$.setdata(CookieVal,'bbb_ck')
     for (let i = 0; i < bbb_ckArr.length; i++) {
     if (bbb_ckArr[i]) {
       CookieVal = bbb_ckArr[i];
-      $.msg($.name,"開始🎉🎉🎉")
+      $.msg($.name,"開始🎉🎉🎉账号"+i)
       await userInfo()
       await signIn()
       await checkWaterNum()
@@ -90,8 +90,8 @@ if(CookieVal)$.setdata(CookieVal,'bbb_ck')
       await getNewsId()
       await checkWaterNum()
       await getQuestionId()
-      await guaList()
-      await checkHomeJin()
+      //await guaList()
+      //await checkHomeJin()
       await showmsg()
       }  
             }  
