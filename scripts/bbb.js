@@ -90,8 +90,8 @@ if(CookieVal)$.setdata(CookieVal,'bbb_ck')
       await getNewsId()
       await checkWaterNum()
       await getQuestionId()
-      //await guaList()
-      //await checkHomeJin()
+      await guaList()
+      await checkHomeJin()
       await showmsg()
       }  
             }  
