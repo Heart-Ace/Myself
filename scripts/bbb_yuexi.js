@@ -35,13 +35,13 @@ const notify = $.isNode() ? require('./sendNotify') : '';
 
 if ($.isNode()) {
 
-if (process.env.BBB_CK && process.env.BBB_CK.indexOf('\n') > -1) {
-  bbb_ck = process.env.BBB_CK.split('\n');
+if (process.env.BBB_CK_YUEXI && process.env.BBB_CK_YUEXI.indexOf('\n') > -1) {
+  bbb_ck = process.env.BBB_CK_YUEXI.split('\n');
   console.log(`您选择的是用换行隔开\n`)
   } 
   else
   {
-  bbb_ck = process.env.BBB_CK.split()
+  bbb_ck = process.env.BBB_CK_YUEXI.split()
   } 
   Object.keys(bbb_ck).forEach((item) => {
         if (bbb_ck[item]) {
