@@ -24,6 +24,7 @@ jobs:
         run: |
           npm install
       - name: '运行 【bbb_rl】'
+        if: env.BBB_CK_RL
         run: |
           node scripts/bbb_rl.js
         env:
