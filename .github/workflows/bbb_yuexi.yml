@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-        BBB_CK: ${{ secrets.BBB_CK_YUEXI }}
+        BBB_CK_YUEXI: ${{ secrets.BBB_CK_YUEXI }}
         TZ: Asia/shanghai
     steps:
       - name: Checkout
