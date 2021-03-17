@@ -13,6 +13,7 @@ jobs:
     env:
         KKDHEADER: ${{ secrets.KKDHEADER }}
         KKDCOOKIE: ${{ secrets.KKDCOOKIE }}        
+        KKDSIGN: ${{ secrets.KKDSIGN }}            
         TZ: Asia/shanghai
     steps:
       - name: Checkout
